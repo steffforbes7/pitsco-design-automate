@@ -1,33 +1,29 @@
 # Soil Moisture Reader
 
-```package
-kitronik-smart-greenhouse
-```
+## Introduction @showdialog
 
-## Step 1 @showdialog
+Welcome! In this tutorial you will program the micro:bit to read and display soil moisture levels.
 
-In this tutorial you will set up the micro:bit to read the soil moisture sensor and display the reading on the LED screen.
+## Step 1
+
+Open ``||variables:Variables||`` and click **Make a Variable**. Name it **Soil Moisture**.
 
 ## Step 2
 
-Go to ``||Variables:Variables||`` and click **Make a Variable**. Name it **Soil Moisture**.
+In the ``||basic:on start||`` block, set **Soil Moisture** to **0**.
 
 ## Step 3
 
-In ``||basic:on start||`` add ``||variables:set Soil Moisture to 0||``.
+Add a ``||basic:forever||`` block. Inside it, set **Soil Moisture** to the soil prong moisture reading from the Kitronik FarmBeats blocks.
 
 ## Step 4
 
-Add a ``||basic:forever||`` loop. Inside it set **Soil Moisture** to **soil prong moisture** from the Kitronik FarmBeats blocks.
+Add ``||basic:show number||`` and place the **Soil Moisture** variable inside it.
 
 ## Step 5
 
-Add ``||basic:show number||`` and drop in the **Soil Moisture** variable.
+Add ``||basic:pause (ms) 500||``, then ``||basic:clear screen||``, then ``||basic:pause (ms) 5000||``.
 
-## Step 6
+## Finished @showdialog
 
-Add ``||basic:pause (ms) 500||`` then ``||basic:clear screen||`` then ``||basic:pause (ms) 5000||``.
-
-## Step 7 @showdialog
-
-Download your code and test it with the soil sensor!
+Your program is ready! Download it to your micro:bit and test the sensor.
